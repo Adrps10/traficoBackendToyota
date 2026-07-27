@@ -1,7 +1,7 @@
-"services:" 
-"  - type: web" 
-"    name: trafico-backend" 
-"    env: java" 
-"    buildCommand: ./mvnw clean install -DskipTests" 
-"    startCommand: ./mvnw spring-boot:run" 
-"    plan: free" 
+﻿services:
+  - type: web
+    name: trafico-backend
+    env: java
+    buildCommand: mvn clean install -DskipTests
+    startCommand: java -jar target/*.jar
+    plan: free
