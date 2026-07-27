@@ -1,0 +1,18 @@
+services:
+  # BACKEND - Spring Boot
+  - type: web
+    name: trafico-backend
+    env: java
+    buildCommand: ./mvnw clean install -DskipTests
+    startCommand: ./mvnw spring-boot:run
+    plan: free
+
+  # FRONTEND - React (con la ruta correcta)
+  - type: static
+    name: trafico-frontend
+    buildCommand: |
+      cd frontend
+      npm install
+      npm run build
+    staticPublishPath: frontend/build
+    plan: free

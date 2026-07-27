@@ -1,0 +1,16 @@
+package com.inmotion.trafico.model;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class TrafficUpdateDTO {
+    private LocalDateTime exitTime;
+    private String comments;
+    private LocalDateTime nextVisit;
+}

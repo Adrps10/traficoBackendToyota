@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "chmod +x mvnw && ./mvnw clean install -DskipTests"
+  },
+  "deploy": {
+    "startCommand": "chmod +x mvnw && ./mvnw spring-boot:run",
+    "healthcheckPath": "/api/trafico/coaches",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
