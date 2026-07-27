@@ -3,5 +3,5 @@
     name: trafico-backend
     env: java
     buildCommand: mvn clean install -DskipTests
-    startCommand: java -jar target/*.jar
+    startCommand: java -jar target/trafico-1.0.0.jar
     plan: free

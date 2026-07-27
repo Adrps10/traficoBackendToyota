@@ -1,4 +1,5 @@
 ﻿target/
+.mvn/
 .classpath
 .project
 .settings/
@@ -7,3 +8,4 @@
 *.log
 .env
 application-local.properties
+.DS_Store
