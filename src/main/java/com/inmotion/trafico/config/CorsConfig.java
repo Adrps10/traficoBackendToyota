@@ -21,7 +21,8 @@ public class CorsConfig {
             "https://toyota-pachuca-app.loca.lt",
             "https://toyota-pachuca-api.loca.lt",
             "https://*.loca.lt",
-            "https://traficotoyotapachuca.onrender.com", // Dominios de Render agregados
+            "https://traficotoyotapachuca.onrender.com",
+            "https://traficobackendtoyota.onrender.com",
             "https://*.onrender.com"
         ));
         
