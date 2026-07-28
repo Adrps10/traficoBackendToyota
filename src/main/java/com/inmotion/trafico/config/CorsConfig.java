@@ -15,13 +15,14 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         
-        // Usamos setAllowedOriginPatterns para permitir comodines (*) junto con allowCredentials(true)
         config.setAllowedOriginPatterns(List.of(
             "http://localhost:3000",
             "http://localhost:4200",
             "https://toyota-pachuca-app.loca.lt",
             "https://toyota-pachuca-api.loca.lt",
-            "https://*.loca.lt"
+            "https://*.loca.lt",
+            "https://traficotoyotapachuca.onrender.com", // Dominios de Render agregados
+            "https://*.onrender.com"
         ));
         
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
